@@ -12,7 +12,7 @@ This is a weather web application built using HTML, CSS, JavaScript, and React w
 - [Known Issues and Limitations](#known-issues-and-limitations)
 - [Approach](#approach)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 - Responsive UI
