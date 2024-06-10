@@ -1,0 +1,166 @@
+/* src/index.css */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.weather-icon {
+  margin: 20px 0;
+  animation: spin 20s linear infinite;
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  
+  
+  background-color: #f0f0f0; /* Fallback background color */
+  transition: background-color 0.3s;
+}
+
+#root {
+  flex: 1; /* Fill remaining space */
+  
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure space between header, main content, and footer */
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; /* Ensure app takes at least the height of the viewport */
+  background-size: cover; /* Cover entire screen */
+  background-position: center;
+  transition: background-image 0.3s;
+  position: relative; /* Ensure proper positioning for children */
+}
+
+.header, .footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  position: fixed;
+  left: 0;
+  transition: background-color 0.3s; /* Transition background color */
+}
+
+.header.dark, .footer.dark {
+  background-color: #363636; /* Dark mode background color */
+  color: white;
+}
+
+.header {
+  top: 0; /* Fixed to top */
+}
+
+.footer {
+  bottom: 0; /* Fixed to bottom */
+}
+
+.search-bar {
+  margin: 20px 0;
+  
+  
+  
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-weight: bold;
+  
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 0px;
+  background-color: #1993b5;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.main-content {
+  flex: 1; /* Fill remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px auto;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s;
+}
+
+.weather-card.dark {
+  background: rgba(34, 34, 34, 0.8);
+  color: #ffffff;
+}
+
+.weather-icon {
+  margin: 20px 0;
+}
+
+.weather-description {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.weather-card p {
+  margin: 5px 0;
+}
+
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button-light {
+  background-color: #212121;
+  color: white;
+  font-weight: bold;
+}
+
+.button-dark {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.button-light:hover, .button-dark:hover {
+  opacity: 0.8;
+}
