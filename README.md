@@ -59,7 +59,7 @@ This is a weather web application built using HTML, CSS, JavaScript, and React w
     ```
 2. Open your browser and go to `http://localhost:3000` to see the application.
 
-##Live Demo
+## Live Demo
 - https://6665b93974013cdada6be8c5--chimerical-dieffenbachia-019cdb.netlify.app/
 
 ## Known Issues and Limitations
