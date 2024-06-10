@@ -59,6 +59,9 @@ This is a weather web application built using HTML, CSS, JavaScript, and React w
     ```
 2. Open your browser and go to `http://localhost:3000` to see the application.
 
+##Live Demo
+- https://6665b93974013cdada6be8c5--chimerical-dieffenbachia-019cdb.netlify.app/
+
 ## Known Issues and Limitations
 - The application currently uses the OpenWeatherMap API, which requires an API key. Ensure you replace `YOUR_API_KEY` with your actual API key in the `App.jsx` file.
 - The application may not handle API rate limits gracefully.
